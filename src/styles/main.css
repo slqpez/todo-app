@@ -78,11 +78,16 @@ h1 {
   align-self: center;
   line-height: 2em;
   font-size: 1.1em;
+  -webkit-appearance: none;
 }
 
 #btn__task:hover {
   background: rgb(52, 52, 189);
   cursor: pointer;
+}
+
+#btn__task:focus {
+  outline: none;
 }
 
 .task {
