@@ -57,6 +57,12 @@ h1 {
   width: 300px;
   flex-grow: 1;
   height: auto;
+  flex-direction: column;
+}
+
+.output-task h2 {
+  margin-bottom: 20px;
+  align-self: center;
 }
 
 #btn__task {
@@ -77,4 +83,18 @@ h1 {
 #btn__task:hover {
   background: rgb(52, 52, 189);
   cursor: pointer;
+}
+
+.task {
+  color: rgb(36, 20, 131);
+  font-size: 1.5em;
+  margin: 10px;
+  background: url("https://img.icons8.com/plasticine/100/000000/task.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 35px;
+  list-style: none;
+}
+.task::first-letter {
+  text-transform: uppercase;
 }
