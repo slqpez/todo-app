@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(153, 153, 219), rgb(226, 182, 100));
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  text-shadow: 3px 0px 3px #000000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-task {
+  padding: 20px;
+  flex-grow: 1;
+  width: 300px;
+}
+
+#todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-task-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(112, 51, 29);
+}
+
+#textarea {
+  resize: none;
+  width: 100%;
+  box-shadow: 1px 1px 2px #000000;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.output-task {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  flex-grow: 1;
+  height: auto;
+}
+
+#btn__task {
+  padding: 5px;
+  background: rgb(81, 149, 206);
+  box-shadow: 1px 1px 2px #000000;
+  border-radius: 20px;
+  color: cornsilk;
+  border: none;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  align-self: center;
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+#btn__task:hover {
+  background: rgb(52, 52, 189);
+  cursor: pointer;
+}
