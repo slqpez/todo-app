@@ -18,7 +18,9 @@ h1 {
 }
 .container {
   width: 80%;
+  padding: 10px;
   margin: auto;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -141,7 +143,8 @@ h1 {
   text-align: center;
   cursor: pointer;
   box-shadow: 1px 1px 2px #000000;
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .btn-delete-all:hover {
