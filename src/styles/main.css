@@ -63,6 +63,9 @@ h1 {
 .output-task h2 {
   margin-bottom: 20px;
   align-self: center;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 1.6em;
+  letter-spacing: 1.5px;
 }
 
 #btn__task {
@@ -121,4 +124,28 @@ h1 {
 
 .task::first-letter {
   text-transform: uppercase;
+}
+
+.btn-delete-all {
+  text-decoration: none;
+  background-color: rgb(216, 76, 76);
+  display: block;
+  width: 60%;
+  margin: auto;
+  border-radius: 50px;
+  line-height: 1.5em;
+  padding: 10px;
+  color: cornsilk;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #000000;
+  margin-top: 60px;
+}
+
+.btn-delete-all:hover {
+  background-color: rgb(146, 29, 29);
+}
+
+.btn-delete-all:active {
+  background-color: crimson;
 }
