@@ -101,13 +101,15 @@ h1 {
 .task {
   color: rgb(36, 20, 131);
   font-size: 1.5em;
-  margin: 10px;
-  background: url("https://img.icons8.com/plasticine/100/000000/task.png");
+  margin: 20px;
+  background: url("https://img.icons8.com/plasticine/100/000000/task.png") left
+    center;
   background-repeat: no-repeat;
   background-size: 30px;
-  padding-left: 35px;
+  padding: 5px 5px 5px 35px;
   list-style: none;
   position: relative;
+  box-shadow: -1px 1px 4px 0px #000000;
 }
 
 .task a {

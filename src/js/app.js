@@ -7,6 +7,7 @@ button.addEventListener("click", addTask);
 list.addEventListener("click", removeTask);
 document.addEventListener("DOMContentLoaded", loadTasks);
 btnAll.addEventListener("click", deleteAll);
+document.addEventListener("keypress", addWithEnter);
 
 function addTask(e) {
   const task = textarea.value;
@@ -19,7 +20,14 @@ function addTask(e) {
     textarea.value = "";
     btnAll.style.display = "block";
     e.preventDefault();
-  } else alert("No ingresaste ninguna tarea");
+  } else {
+    alert("No ingresaste ninguna tarea");
+    textarea.value = "";
+  }
+}
+
+function addWithEnter(e) {
+  if (e.keyCode === 13) addTask(e);
 }
 
 function removeTask(e) {
@@ -46,13 +54,16 @@ function loadTasks() {
       key
     )}<a class="delete"></a></li>`;
   }
+
+  if (localStorage.length === 0 || localStorage === undefined) {
+    btnAll.style.display = "none";
+  }
 }
 
 function deleteAll(e) {
   const childrenItems = list.children;
   const arrayTasks = Array.from(childrenItems);
   arrayTasks.forEach((task) => {
-    console.log(task);
     task.remove();
   });
 
