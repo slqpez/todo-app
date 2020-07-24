@@ -9,14 +9,16 @@
       href="https://img.icons8.com/color/48/000000/clown-fish.png"
       type="image/x-icon"
     />
-    <title>TODO App</title>
+    <title>TODO</title>
   </head>
   <body>
-    <h1>TODO list app</h1>
+    <h1>Lista de tareas</h1>
     <div class="container">
       <div class="input-task">
         <form action="#" id="todo-form">
-          <label id="input-task-label" for="textarea">Insert a new task:</label>
+          <label id="input-task-label" for="textarea"
+            >Ingrese una nueva tarea:</label
+          >
           <textarea
             autofocus
             name="todo-input"
@@ -24,13 +26,14 @@
             cols="2"
             rows="4"
           ></textarea>
-          <button id="btn__task">Save task</button>
+          <button id="btn__task">Guardar tarea</button>
         </form>
       </div>
       <div class="output-task">
-        <h2 id="output-tasks-title">My tasks</h2>
+        <h2 id="output-tasks-title">Mis tareas</h2>
         <ul class="task-list"></ul>
-        <a class="btn-delete-all" href="#">Delete all tasks</a>
+        <p class="no-tasks-msg">¡No tienes tareas pendientes!</p>
+        <a class="btn-delete-all" href="#">Borrar todas las tareas</a>
       </div>
     </div>
     <script src="js/app.js"></script>

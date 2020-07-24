@@ -7,6 +7,7 @@
 
 body {
   background: linear-gradient(to right, rgb(153, 153, 219), rgb(226, 182, 100));
+  min-height: 100%;
 }
 
 h1 {
@@ -18,9 +19,10 @@ h1 {
 }
 .container {
   width: 80%;
-  padding: 10px;
+  height: auto;
+  padding: 20px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -59,6 +61,7 @@ h1 {
   width: 300px;
   flex-grow: 1;
   height: auto;
+  padding-bottom: 15px;
   flex-direction: column;
 }
 
@@ -112,6 +115,7 @@ h1 {
   list-style: none;
   position: relative;
   width: 80%;
+  min-height: 40px;
   height: auto;
   box-shadow: -1px 1px 4px 0px #000000;
   background-color: cadetblue;
@@ -160,4 +164,17 @@ h1 {
 
 .btn-delete-all:active {
   background-color: crimson;
+}
+
+.no-tasks-msg {
+  text-align: center;
+  color: rgb(64, 114, 14);
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 15px;
+  display: none;
+
+  background: url("https://img.icons8.com/cotton/64/000000/sun-glasses--v2.png")
+    no-repeat right 10px center;
+  background-size: 50px;
 }

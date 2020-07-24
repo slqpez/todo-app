@@ -2,6 +2,7 @@ const textarea = document.querySelector("#textarea");
 const button = document.querySelector("#btn__task");
 const list = document.querySelector(".task-list ");
 const btnAll = document.querySelector(".btn-delete-all");
+const msg = document.querySelector(".no-tasks-msg");
 
 button.addEventListener("click", addTask);
 list.addEventListener("click", removeTask);
@@ -19,6 +20,7 @@ function addTask(e) {
     localStorage.setItem(`task${sizeStorage + 1}`, `${task}`);
     textarea.value = "";
     btnAll.style.display = "block";
+    msg.style.display = "none";
     e.preventDefault();
   } else {
     alert("No ingresaste ninguna tarea");
@@ -31,16 +33,15 @@ function addWithEnter(e) {
 }
 
 function removeTask(e) {
-  const erase = document.querySelector(".delete");
   if (e.target.className === "delete") {
     e.target.parentElement.remove();
-    const toDelete = erase.parentElement.id;
+    const toDelete = e.target.parentElement.id;
     localStorage.removeItem(toDelete);
     const childrenItems = list.children;
     const arrayTasks = Array.from(childrenItems);
-
     if (arrayTasks.length === 0 || arrayTasks === undefined) {
       btnAll.style.display = "none";
+      msg.style.display = "block";
     }
     e.preventDefault();
   }
@@ -49,13 +50,16 @@ function removeTask(e) {
 function loadTasks() {
   for (let i = 0; i <= localStorage.length - 1; i++) {
     const key = localStorage.key(i);
+
     list.innerHTML += `<li class="task" id="${key}"> ${localStorage.getItem(
       key
     )}<a class="delete"></a></li>`;
   }
+  console.log(localStorage);
 
   if (localStorage.length === 0 || localStorage === undefined) {
     btnAll.style.display = "none";
+    msg.style.display = "block";
   }
 }
 
@@ -67,6 +71,7 @@ function deleteAll(e) {
   });
 
   btnAll.style.display = "none";
+  msg.style.display = "block";
   localStorage.clear();
   e.preventDefault();
 }
