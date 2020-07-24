@@ -33,8 +33,7 @@ function addWithEnter(e) {
 function removeTask(e) {
   const erase = document.querySelector(".delete");
   if (e.target.className === "delete") {
-    erase.parentElement.remove();
-    const parentClass = erase.parentElement.className;
+    e.target.parentElement.remove();
     const toDelete = erase.parentElement.id;
     localStorage.removeItem(toDelete);
     const childrenItems = list.children;
