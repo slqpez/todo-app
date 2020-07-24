@@ -180,6 +180,10 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  .task {
+    font-size: 1.3em;
+  }
+
   .btn-delete-all {
     width: 90%;
   }
