@@ -28,9 +28,9 @@ function addTask(e) {
   }
 }
 
-function addWithEnter(e) {
+/* function addWithEnter(e) {
   if (e.keyCode === 13) addTask(e);
-}
+} */
 
 function removeTask(e) {
   if (e.target.className === "delete") {
