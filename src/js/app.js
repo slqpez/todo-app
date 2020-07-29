@@ -8,7 +8,7 @@ button.addEventListener("click", addTask);
 list.addEventListener("click", removeTask);
 document.addEventListener("DOMContentLoaded", loadTasks);
 btnAll.addEventListener("click", deleteAll);
-document.addEventListener("keypress", addWithEnter);
+/* document.addEventListener("keypress", addWithEnter); */
 
 function addTask(e) {
   const task = textarea.value;
