@@ -58,6 +58,7 @@ h1 {
 
 #textarea {
   resize: none;
+  color: #022b3a;
   background-color: #e1e5f2;
   width: 100%;
   box-shadow: 1px 1px 2px #000000;
@@ -93,7 +94,7 @@ h1 {
   background: #022b3a;
   box-shadow: 1px 1px 2px #000000;
   border-radius: 20px;
-  color: cornsilk;
+  color: #e1e5f2;
   border: none;
   width: 70%;
   margin: auto;
@@ -105,7 +106,7 @@ h1 {
 }
 
 #btn__task:hover {
-  background: rgb(52, 52, 189);
+  background: rgb(7, 59, 68);
   cursor: pointer;
 }
 
@@ -150,7 +151,7 @@ h1 {
     no-repeat center center;
   background-size: 100%;
   cursor: pointer;
-  box-shadow: 1px 0px 5px 0px #000000;
+  box-shadow: 1px 0px 5px 0px #022b3a;
 }
 
 .task::first-letter {
@@ -159,14 +160,14 @@ h1 {
 
 .btn-delete-all {
   text-decoration: none;
-  background-color: rgb(216, 76, 76);
+  background-color: rgb(158, 37, 37);
   display: block;
   width: 70%;
   margin: auto;
   border-radius: 50px;
   line-height: 1.5em;
   padding: 10px;
-  color: cornsilk;
+  color: #e1e5f2;
   text-align: center;
   cursor: pointer;
   box-shadow: 1px 1px 2px #000000;
@@ -175,7 +176,7 @@ h1 {
 }
 
 .btn-delete-all:hover {
-  background-color: rgb(146, 29, 29);
+  background-color: rgb(167, 51, 51);
 }
 
 .btn-delete-all:active {
