@@ -1,3 +1,8 @@
+:root {
+  --bgcontainer: #1f7a8c;
+  --bgbody: #022b3a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +11,13 @@
 }
 
 body {
-  background: linear-gradient(to right, rgb(153, 153, 219), rgb(226, 182, 100));
+  background: var(--bgbody);
   min-height: 100%;
 }
 
 h1 {
   text-align: center;
+  color: #e1e5f2;
   margin: 20px;
   text-shadow: 3px 0px 3px #000000;
   letter-spacing: 0.1em;
@@ -29,6 +35,8 @@ h1 {
 }
 
 .input-task {
+  background-color: var(--bgcontainer);
+  box-shadow: 2px 2px 10px #000;
   padding: 20px;
   flex-grow: 1;
   width: 300px;
@@ -42,13 +50,15 @@ h1 {
 #input-task-label {
   display: block;
   margin-bottom: 8px;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: rgb(112, 51, 29);
+  font-size: 1.6em;
+  color: #e1e5f2;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #000;
 }
 
 #textarea {
   resize: none;
+  background-color: #e1e5f2;
   width: 100%;
   box-shadow: 1px 1px 2px #000000;
   padding: 10px;
@@ -56,18 +66,23 @@ h1 {
 }
 
 .output-task {
+  background-color: var(--bgcontainer);
+  box-shadow: 2px 2px 10px #000;
   display: flex;
   justify-content: center;
   width: 300px;
   flex-grow: 1;
   height: auto;
+  padding-top: 20px;
   padding-bottom: 15px;
   flex-direction: column;
 }
 
 .output-task h2 {
   margin-bottom: 20px;
+  font-weight: 500;
   align-self: center;
+  color: #e1e5f2;
   text-shadow: 1px 1px 2px #000;
   font-size: 1.6em;
   letter-spacing: 1.5px;
@@ -75,7 +90,7 @@ h1 {
 
 #btn__task {
   padding: 5px;
-  background: rgb(81, 149, 206);
+  background: #022b3a;
   box-shadow: 1px 1px 2px #000000;
   border-radius: 20px;
   color: cornsilk;
@@ -104,7 +119,7 @@ h1 {
 }
 
 .task {
-  color: rgb(36, 20, 131);
+  color: #022b3a;
   font-size: 1.5em;
   margin: 25px auto;
   background: url("https://img.icons8.com/plasticine/100/000000/task.png") left
@@ -118,7 +133,7 @@ h1 {
   min-height: 40px;
   height: auto;
   box-shadow: -1px 1px 4px 0px #000000;
-  background-color: cadetblue;
+  background-color: #bfdbf7;
   word-wrap: break-word;
   display: block;
 }
