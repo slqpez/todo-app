@@ -11,7 +11,8 @@
 }
 
 body {
-  background: var(--bgbody);
+  background: url("loqui.jpeg");
+  background-size: 100%;
   min-height: 100%;
 }
 
