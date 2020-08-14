@@ -11,10 +11,7 @@
 }
 
 body {
-  background: url("loqui.jpeg") no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  background-attachment: fixed;
+  background: var(--bgbody);
 }
 
 h1 {
@@ -202,6 +199,12 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    background: url("loqui.jpeg") no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-attachment: fixed;
+  }
   .task {
     font-size: 1.1em;
   }
